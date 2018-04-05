@@ -1,0 +1,19 @@
+#!/bin/sh
+
+set -e
+
+. /usr/share/debconf/confmodule
+
+# # override the default keyring
+ln -s debian-ports-archive-keyring.gpg /usr/share/keyrings/archive.gpg
+
+# Force installation of debian-ports-archive-keyring
+if ! db_get "base-installer/includes" ; then
+    db_register debian-installer/dummy "base-installer/includes"
+    INCLUDES="debian-ports-archive-keyring"
+else
+    INCLUDES="$RET debian-ports-archive-keyring"
+fi
+db_set base-installer/includes "$INCLUDES"
+
+exit 0

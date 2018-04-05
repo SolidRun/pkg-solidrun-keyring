@@ -1,0 +1,26 @@
+Source: debian-ports-archive-keyring
+Section: misc
+Priority: extra
+Maintainer: Aurelien Jarno <aurel32@debian.org>
+Build-Depends: debhelper (>> 9), gnupg1
+Standards-Version: 3.9.8
+
+Package: debian-ports-archive-keyring
+Architecture: all
+Multi-Arch: foreign
+Depends: gpgv, apt, ${misc:Depends}
+Recommends: gnupg
+Breaks: apt (<< 0.7.25.1)
+Description: GnuPG archive keys of the debian-ports archive
+ The debian-ports archive digitally signs its Release files. This package
+ contains the archive keys used for that.
+
+Package: debian-ports-archive-keyring-udeb
+XC-Package-Type: udeb
+Section: debian-installer
+Architecture: all
+Recommends: gpgv-udeb
+Description: GnuPG keys of the debian-ports archive
+ The debian-ports archive digitally signs its Release files. This package
+ contains the archive keys used for that, in a minimal form for use
+ in the installer.

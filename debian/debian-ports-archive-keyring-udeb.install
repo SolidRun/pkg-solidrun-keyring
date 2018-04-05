@@ -1,0 +1,2 @@
+build/keyrings/debian-ports-archive-keyring.gpg		usr/share/keyrings
+debian-installer-startup.d/S40debian-ports		lib/debian-installer-startup.d
