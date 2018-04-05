@@ -1,0 +1,2 @@
+build/keyrings/solidrun-keyring.gpg		usr/share/keyrings
+debian-installer-startup.d/S40solidrun		lib/debian-installer-startup.d

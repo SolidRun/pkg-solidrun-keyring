@@ -1,8 +1,8 @@
-README for the debian-ports-archive-keyring package
+README for the solidrun-keyring package
 ===================================================
 
-The debian-ports archive digitally signs its Release files that are
-stored on the debian-ports.org ftp-server and its mirrors with the
+SolidRun digitally signs its Release files that are
+stored on the repo.solid-build.xyz ftp-server and its mirrors with the
 keys contained in this package.
 
 Each active key is provided in a separate keyring in /etc/apt/trusted.gpg.d/

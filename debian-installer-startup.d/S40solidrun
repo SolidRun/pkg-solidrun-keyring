@@ -5,14 +5,14 @@ set -e
 . /usr/share/debconf/confmodule
 
 # # override the default keyring
-ln -s debian-ports-archive-keyring.gpg /usr/share/keyrings/archive.gpg
+ln -s solidrun-keyring.gpg /usr/share/keyrings/archive.gpg
 
-# Force installation of debian-ports-archive-keyring
+# Force installation of solidrun-keyring
 if ! db_get "base-installer/includes" ; then
     db_register debian-installer/dummy "base-installer/includes"
-    INCLUDES="debian-ports-archive-keyring"
+    INCLUDES="solidrun-keyring"
 else
-    INCLUDES="$RET debian-ports-archive-keyring"
+    INCLUDES="$RET solidrun-keyring"
 fi
 db_set base-installer/includes "$INCLUDES"
 

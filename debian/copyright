@@ -1,4 +1,4 @@
-This is debian-ports GnuPG keyring of archive keys.
+This is SolidRun GnuPG keyring.
 
 Copyright:
   
@@ -6,6 +6,8 @@ Copyright:
 
     The other files are Copyright (C) 2010 Aurelien Jarno 
     <aurel32@debian.org>.
+    Forked April 5th 2018
+    Copyright (C) 2018 Josua Mayer
 
 
 License:
