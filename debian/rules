@@ -1,6 +1,7 @@
 #!/usr/bin/make -f
 
 GPG_OPTIONS:=--no-options --no-default-keyring --no-auto-check-trustdb --homedir $(CURDIR)/build
+GPG:=$(shell which gpg1 || echo gpg)
 
 %:
 	dh $@
@@ -10,13 +11,13 @@ override_dh_auto_build:
 
 	# Build keyrings
 	mkdir -p $(CURDIR)/build/keyrings ; \
-	gpg1 $(GPG_OPTIONS) --keyring $(CURDIR)/build/keyrings/solidrun-keyring.gpg --import $(CURDIR)/active-keys/* ; \
-	#gpg1 $(GPG_OPTIONS) --keyring $(CURDIR)/build/keyrings/solidrun-keyring-removed.gpg --import $(CURDIR)/removed-keys/* ; \
+	$(GPG) $(GPG_OPTIONS) --keyring $(CURDIR)/build/keyrings/solidrun-keyring.gpg --import $(CURDIR)/active-keys/* ; \
+	#$(GPG) $(GPG_OPTIONS) --keyring $(CURDIR)/build/keyrings/solidrun-keyring-removed.gpg --import $(CURDIR)/removed-keys/* ; \
 
 	# Build fragment files
 	mkdir -p $(CURDIR)/build/trusted.gpg.d
 	for k in `ls $(CURDIR)/active-keys` ; do \
-	    gpg1 $(GPG_OPTIONS) --keyring $(CURDIR)/build/trusted.gpg.d/$${k%.key}.gpg --import $(CURDIR)/active-keys/$$k ; \
+	    $(GPG) $(GPG_OPTIONS) --keyring $(CURDIR)/build/trusted.gpg.d/$${k%.key}.gpg --import $(CURDIR)/active-keys/$$k ; \
 	done
 
 override_dh_auto_clean:
