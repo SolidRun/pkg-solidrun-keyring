@@ -1,3 +1,9 @@
+solidrun-keyring (2018.10.10) stable; urgency=medium
+
+  * add key for imx8 repo.
+
+ -- Josua Mayer <josua@solid-run.com>  Wed, 10 Oct 2018 15:27:07 +0200
+
 solidrun-keyring (2018.04.05) stable; urgency=medium
 
   * Initial release based on the debian-oirts-archive-keyring package.
