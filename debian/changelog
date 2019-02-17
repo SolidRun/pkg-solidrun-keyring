@@ -1,3 +1,9 @@
+solidrun-keyring (2019.02.18) stable; urgency=medium
+
+  * add key for 8040 repo.
+
+ -- Josua Mayer <josua@solid-run.com>  Sun, 17 Feb 2019 14:05:10 +0100
+
 solidrun-keyring (2018.10.10) stable; urgency=medium
 
   * add key for imx8 repo.
