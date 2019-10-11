@@ -1,3 +1,9 @@
+solidrun-keyring (2019.10.11) stable; urgency=medium
+
+  * extended keys
+
+ -- Josua Mayer <josua@solid-run.com>  Fri, 11 Oct 2019 17:24:13 +0200
+
 solidrun-keyring (2019.08.26) stable; urgency=medium
 
   * add key for generic repo
