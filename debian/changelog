@@ -1,3 +1,10 @@
+solidrun-keyring (2020.01.05) stable; urgency=medium
+
+  * extended keys
+  * add key for lx2k repo
+
+ -- Josua Mayer <josua@solid-run.com>  Sun, 05 Jan 2020 16:42:12 +0100
+
 solidrun-keyring (2019.10.11) stable; urgency=medium
 
   * extended keys
