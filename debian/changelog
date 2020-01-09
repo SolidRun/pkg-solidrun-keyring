@@ -1,3 +1,9 @@
+solidrun-keyring (2020.01.09) stable; urgency=medium
+
+  * add key for a38x repo
+
+ -- Josua Mayer <josua@solid-run.com>  Thu, 09 Jan 2020 16:21:39 +0100
+
 solidrun-keyring (2020.01.05) stable; urgency=medium
 
   * extended keys
