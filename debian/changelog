@@ -1,3 +1,9 @@
+solidrun-keyring (2020.11.01) stable; urgency=medium
+
+  * add key for imx8 bsp v2 repo
+
+ -- Josua Mayer <josua@solid-run.com>  Sun, 01 Nov 2020 13:34:24 +0100
+
 solidrun-keyring (2020.10.13) stable; urgency=medium
 
   * extended keys
