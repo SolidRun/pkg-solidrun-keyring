@@ -1,3 +1,9 @@
+solidrun-keyring (2022.07.04) stable; urgency=medium
+
+  * extend all OBS keys
+
+ -- Josua Mayer <josua@solid-run.com>  Mon, 04 Jul 2022 12:11:40 +0300
+
 solidrun-keyring (2022.02.28) stable; urgency=medium
 
   * add new standalone signing key
